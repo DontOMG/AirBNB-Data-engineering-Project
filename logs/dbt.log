@@ -1,0 +1,50 @@
+[0m20:03:05.595726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133bfbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11382d7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11382f530>]}
+
+
+============================== 20:03:05.614209 | 85a93092-c831-4e31-b2c7-9e3e3ad1207b ==============================
+[0m20:03:05.614209 [info ] [MainThread]: Running with dbt=1.11.2
+[0m20:03:05.614457 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'printer_width': '80', 'empty': 'None', 'target_path': 'None', 'debug': 'False', 'profiles_dir': '/Users/alidhaga/.dbt', 'version_check': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m20:03:05.639541 [info ] [MainThread]: Creating dbt configuration folder at /Users/alidhaga/.dbt
+[0m20:04:35.630342 [debug] [MainThread]: Starter project path: /Users/alidhaga/Desktop/aws_dbt_snowflake_project/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m20:04:35.640696 [info ] [MainThread]: 
+Your new dbt project "airbnb_aws_dbt_snow_proj" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:04:35.641324 [info ] [MainThread]: Setting up your profile.
+[0m20:04:57.378717 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:04:57.379341 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:04:57.379644 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:10:57.129153 [info ] [MainThread]: Profile airbnb_aws_dbt_snow_proj written to /Users/alidhaga/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:10:57.543968 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 471.98886, "process_in_blocks": "0", "process_kernel_time": 0.493305, "process_mem_max_rss": "176062464", "process_out_blocks": "0", "process_user_time": 2.062291}
+[0m20:10:57.546140 [debug] [MainThread]: Command `dbt init` succeeded at 20:10:57.545973 after 471.99 seconds
+[0m20:10:57.546708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112407260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151523c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1165fa570>]}
+[0m20:10:57.547220 [debug] [MainThread]: Flushing usage events
+[0m20:10:58.543650 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:43:50.036713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104817ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055579e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055571a0>]}
+
+
+============================== 21:43:50.038515 | d8ae553d-d76b-42f3-849f-14e3925bb210 ==============================
+[0m21:43:50.038515 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:43:50.038753 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --select models/demo', 'fail_fast': 'False', 'printer_width': '80', 'warn_error': 'None', 'log_path': 'logs', 'use_colors': 'True', 'partial_parse': 'True', 'profiles_dir': '/Users/alidhaga/.dbt', 'indirect_selection': 'eager', 'version_check': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_format': 'default', 'empty': 'False', 'no_print': 'None'}
+[0m21:43:50.038979 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/alidhaga/Desktop/aws_dbt_snowflake_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:43:50.040655 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.029655917, "process_in_blocks": "0", "process_kernel_time": 0.067462, "process_mem_max_rss": "106070016", "process_out_blocks": "0", "process_user_time": 0.473452}
+[0m21:43:50.040877 [debug] [MainThread]: Command `dbt run` failed at 21:43:50.040838 after 0.03 seconds
+[0m21:43:50.041011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050f60c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e7ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104817ad0>]}
+[0m21:43:50.041131 [debug] [MainThread]: Flushing usage events
+[0m21:43:50.894328 [debug] [MainThread]: An error was encountered while trying to flush usage events
