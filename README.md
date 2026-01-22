@@ -9,7 +9,9 @@ Silver (Applying Basic Filter)
 Gold (created OBT and also facts and dimensions)
 
 What i've learned from this project:
-How to connect snowflake with dbt
-Learned jinja SQL
+How to connect snowflake with dbt,
+Learned jinja SQL,
 how to create macros, worked with ephemeral materials and
 learned to create .yml files 
+Created Meta-data driven pipeline
+
