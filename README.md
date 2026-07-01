@@ -12,6 +12,5 @@ What i've learned from this project:
 How to connect snowflake with dbt,
 Learned jinja SQL,
 how to create macros, worked with ephemeral materials and
-learned to create .yml files 
-Created Meta-data driven pipeline!
+learned to create .yml files and Created Meta-data driven pipeline!
 
