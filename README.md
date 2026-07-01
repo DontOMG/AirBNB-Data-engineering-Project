@@ -1,6 +1,6 @@
 In this AirBNB data engineering project:
 
-I have used S3 to store raw data,
+I have used S3 to store raw data
 then used snowflake as datawarehouse
 and with the help of DBT I have created
 Madallion Architecture:
